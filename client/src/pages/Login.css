@@ -1,0 +1,98 @@
+/* Center the login section */
+.section-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+/* Container for login form */
+.login-form {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-form label {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  color: #333;
+  display: block;  /* Make label take full width */
+  margin-bottom: 5px; /* Adds spacing between label and input */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading */
+.main-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Form input fields */
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.login-form input:focus {
+  outline: none;
+  border-color: #6e8efb;
+  box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+}
+
+/* Button styling */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #6e8efb;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-submit:hover {
+  background: #5a7be3;
+  transform: scale(1.05);
+}
+
+/* Button click effect */
+.btn-submit:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .login-form {
+    width: 90%;
+    padding: 30px;
+  }
+}
